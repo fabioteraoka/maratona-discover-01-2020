@@ -8,7 +8,8 @@ const routes = require ("./routes")
 server.set('view engine', 'ejs')
 // habilita uma nova funcionalidade no server.get - habilita arquivos estaticos
 server.use(express.static("public"))
-
+//usar o reg.body - esta habilitando a requisicao do meto post
+server.use(express.urlencoded({extended:true}))
 //routes
 server.use(routes)
 server.listen(3000, () => console.log ('rodando')) //posso fazer forma longa server.listen (3000, function(){console.log('rodando')}) ¡
