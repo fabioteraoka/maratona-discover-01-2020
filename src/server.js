@@ -4,8 +4,12 @@ const express = require("express")
 // o valor recebido do require foi colocado em na constante express, agora vai rodar
 const server = express()
 const routes = require ("./routes")
+const path = require("path")
 // criando a view engine para processas o meu html, template engine
 server.set('view engine', 'ejs')
+// mudar a localizacao da pasta views
+// const basePath = __dirname + "/views" // o ejs ja le como padrao o path
+server.set('views', path.join(__dirname , "views"))
 // habilita uma nova funcionalidade no server.get - habilita arquivos estaticos
 server.use(express.static("public"))
 //usar o reg.body - esta habilitando a requisicao do meto post

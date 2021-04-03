@@ -14,13 +14,12 @@
           <img id="logo" src="./images/logo.svg" alt="Logo" />
           <span id="notification">
             <img src="/images/alert-octagon.svg" alt="Alerta" />
-            Você tem 2 horas livres no seu dia
+            <% if(freeHours <= 0){%> Você não tem horas livre <% }else{ %> Você
+            tem <%= freeHours %> horas livres no seu dia <% } %>
           </span>
-          <a href="/profile" id="avatar-profile">
-            <p>Fabio<span>Ver perfil</span></p>
-            <img
-              src="https://avatars.githubusercontent.com/u/65736019?s=400&u=c8f56e0a069bcb4653973db932035decdb946550&v=4"
-            />
+          <a href="./profile" id="avatar-profile">
+            <p><%= profile.name %> <span>Ver perfil</span></p>
+            <img src="<%= profile.avatar %>" />
           </a>
         </section>
 
@@ -31,15 +30,15 @@
 
           <div class="info">
             <div class="total">
-              <strong>12</strong>
+              <strong><%= statusCount.total %> </strong>
               Projetos ao total
             </div>
             <div class="in-progress">
-              <strong>7</strong>
+              <strong><%= statusCount.progress %> </strong>
               Em andamento
             </div>
             <div class="finished">
-              <strong>4</strong>
+              <strong><%= statusCount.done %> </strong>
               Encerrados
             </div>
           </div>
@@ -116,6 +115,7 @@
           <button class="button red" type="submit" form="delete-job">
             Excluir Job
           </button>
+          <p>@Fabio Teraoka</p>
         </footer>
       </div>
       <form method="post" action="/job/delete" id="delete-job"></form>
