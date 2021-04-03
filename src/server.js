@@ -18,5 +18,8 @@ server.use(express.urlencoded({extended:true}))
 server.use(routes)
 //server.listen(3000, () => console.log ('rodando')) //posso fazer forma longa server.listen (3000, function(){console.log('rodando')}) ¡
 
-var porta = process.env.PORT || 8080 
-server.listen(porta, () => console.log('rodando'))
+//var porta = process.env.PORT || 8080 
+//server.listen(porta, () => console.log('rodando'))
+
+var porta = process.env.PORT || 8080;
+app.listen(porta);
