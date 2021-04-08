@@ -15,7 +15,7 @@ module.exports = {
       // transformar dias em milisegundos
       const dayInMs = 1000 * 60 * 60 * 24
       // calcula dos dias restantes math.floor arredonda para baixo
-      const dayDiff = Math.floor(timeDiffInMs / dayInMs)
+      const dayDiff = Math.ceil(timeDiffInMs / dayInMs)
       // resta, x dias
       return dayDiff
     },

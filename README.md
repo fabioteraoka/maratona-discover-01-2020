@@ -51,10 +51,10 @@ Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://disc
 
 # Qual a proposta deste projeto?
 
-[] Organização e estudo
-[] Plataforma e Comunidade
-[] Mentalidade Dev
-[] Praticar as tecnologias do Discover
+[ ] Organização e estudo
+[ ] Plataforma e Comunidade
+[ ] Mentalidade Dev
+[ ] Praticar as tecnologias do Discover
 
 # O que você vai ganhar com isso?
 
@@ -184,7 +184,7 @@ Aula 1
 
 ## Salvar Job
 
-    * [x] Form job
+  * [x] Form job
     - [x] method post
     - [x] action="/job"
     * [x] rota /job POST
@@ -221,13 +221,13 @@ Aula 1
 
 ## Refatorar Jobs
 
-    - [x] Criar um Object Literal Jobs
-    - [x] Adicionar data em Jobs
-    - [x] Adicionar index() e create()
+  - [x] Criar um Object Literal Jobs
+  - [x] Adicionar data em Jobs
+  - [x] Adicionar index() e create()
 
 ## Object Profile
 
-    * [x] data
+  - [x] data
 
 - [x] update()
   - [x] Calculo de custo de hora
@@ -294,11 +294,11 @@ Aula 3
 
 ## Refatorar Job
 
-    * [X] Mover controller para JobController
-    * [X] Criar pasta utils
-    * [X] Mover services de job para utils
-    * [X] Importar utils dentro de jobController
-    * [X] Refatorar chamada de job services para JobUtils
+  * [X] Mover controller para JobController
+  * [X] Criar pasta utils
+  * [X] Mover services de job para utils
+  * [X] Importar utils dentro de jobController
+  * [X] Refatorar chamada de job services para JobUtils
 
 - [x] Mover Job data para model Job
   - [x] Importar model Job dentro de Jobcontroller
@@ -308,9 +308,9 @@ Aula 3
 
 ## Refatorar Dashboard
 
-    * [X] Passar index do JobController para DashboardController
-    * [X] Refatorar a chamada da rota "/" no routes
-    * [X] Importar model Job
+  * [X] Passar index do JobController para DashboardController
+  * [X] Refatorar a chamada da rota "/" no routes
+  * [X] Importar model Job
 
 - [x] Importar model Profile
   - [x] Importar JobUtils
@@ -327,4 +327,69 @@ Aula 3
 
 ## Banco de dados
 
-    * [X] Como funciona banco de dados e tabelas
+  * [X] Como funciona banco de dados e tabelas
+
+Aula 4
+
+# Bora Codar
+- [X]  Revisão da última aula
+- [X]  O que veremos até o final dessa aula?
+
+## Refatorar
+* [X] Save JobController
+
+## Banco de dados
+* [X] Instalar SQLite
+* [X] Criar config
+* [X] Criar init
+* [X]  Async Await
+* [X] Criar tabela profile
+* [X] Criar tabela jobs
+* [X] Inserir profile
+* [X] Inserir Jobs
+* [X]  Instalar beekeeper
+* [X] Ver resultado no beekeeper
+
+## Profile
+* [x]  Importar config no module 
+
+## Profile get()
+* [x] iniciar banco de dados
+* [x] SELECT de profile
+* [x] Fechar banco de dados 
+* [x] Normalizar os dados 
+* [x] Retornar os dados normalizados
+* [X]  Transformar index do controller em Async
+* [X] Transformando index do DashboardController em Async
+
+## Profile update()
+* [X] iniciar banco de dados
+* [X] UPDATE de profile
+* [X] Fechar banco de dados 
+* [X] Transformando update no controler em Async
+
+## Jobs 
+* [X] Importando config no module
+
+## Jobs show()
+* [X] iniciar banco de dados
+* [X] SELECT de job
+* [X] Fechar banco de dados 
+* [X] Normalizar os dados 
+* [X] Retornar os dados normalizados
+* [X] Transformando show do controller em Async
+
+## Jobs create()
+* [X] iniciar banco de dados
+* [X] INSERT de newJob
+* [X] Fechar banco de dados
+
+## Jobs update()
+* [X] iniciar banco de dados
+* [X] UPDATE de job
+* [X] Fechar banco de dados 
+
+## Jobs delete()
+* [X] iniciar banco de dados
+* [X] DELETE job
+* [X] Fechar banco de dados  
