@@ -16,8 +16,8 @@ server.use(express.static("public"))
 server.use(express.urlencoded({extended:true}))
 //routes
 server.use(routes)
-/server.listen(3000, () => console.log ('rodando')) //posso fazer forma longa server.listen (3000, function(){console.log('rodando')}) ¡
+//server.listen(3000, () => console.log ('rodando')) //posso fazer forma longa server.listen (3000, function(){console.log('rodando')}) ¡
 
 // HEROKU
-//const porta = process.env.PORT || 8080;
+const porta = process.env.PORT || 8080;
 //server.listen(porta, () => console.log('rodando'));
