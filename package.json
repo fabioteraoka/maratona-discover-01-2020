@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "star": "node src/server.js",
-    "start": "nodemon index.ejs",
+    "start": "nodemon index.js",
     "dev": "nodemon .",
     "init-db": "node src/db/init.js"
   },
